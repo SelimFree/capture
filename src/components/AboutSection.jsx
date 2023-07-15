@@ -3,7 +3,7 @@ import home1 from "../assets/home1.png"
 function AboutSection() {
     return (
         <div className="AboutSection">
-            <div className="desctiption">
+            <div className="description">
                 <div className="hide">
                     <h2>We work to make</h2>
                 </div>
