@@ -1,5 +1,7 @@
 import "./Navbar.scss";
+//Router Link
 import { Link } from "react-router-dom";
+
 function Navbar() {
     return (
         <nav className="Navbar">
