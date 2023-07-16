@@ -1,5 +1,6 @@
+import "./App.scss"
 // Importing pages
-import AboutUs from "./pages/AboutUs"
+import AboutUs from "./pages/AboutUs/AboutUs"
 
 function App() {
   return (

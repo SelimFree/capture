@@ -1,4 +1,5 @@
-import home1 from "../assets/home1.png"
+import home1 from "../../assets/home1.png"
+import "./AboutSection.scss";
 
 function AboutSection() {
     return (

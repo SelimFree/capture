@@ -1,13 +1,13 @@
 //Import icons
-import clock from "../assets/clock.svg"
-import diaphragm from "../assets/diaphragm.svg"
-import money from "../assets/money.svg"
-import teamwork from "../assets/teamwork.svg"
-import home2 from "../assets/home2.png"
+import clock from "../../assets/clock.svg"
+import diaphragm from "../../assets/diaphragm.svg"
+import money from "../../assets/money.svg"
+import teamwork from "../../assets/teamwork.svg"
+import home2 from "../../assets/home2.png"
 
-function SecvicesSection() {
+function ServicesSection() {
     return (
-        <div className="SecvicesSection">
+        <div className="ServicesSection">
             <div className="description">
                 <h2>High <span>quality</span> sercives</h2>
                 <div className="cards">
@@ -47,4 +47,4 @@ function SecvicesSection() {
         </div>
     )
 }
-export default SecvicesSection;
+export default ServicesSection;
