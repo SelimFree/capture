@@ -1,3 +1,5 @@
+import "./FaqSection.scss"
+
 function FaqSection() {
     return (
         <div className="FaqSection about-div">
@@ -13,6 +15,7 @@ function FaqSection() {
                         Esse nostrum earum voluptatum ullam ex nisi!
                     </p>
                 </div>
+                <div className="faq-line"></div>
             </div>
             <div className="question">
                 <h4>What products do you offer?</h4>
@@ -23,6 +26,7 @@ function FaqSection() {
                         Esse nostrum earum voluptatum ullam ex nisi!
                     </p>
                 </div>
+                <div className="faq-line"></div>
             </div>
             <div className="question">
                 <h4>Different payment methods</h4>
@@ -33,6 +37,7 @@ function FaqSection() {
                         Esse nostrum earum voluptatum ullam ex nisi!
                     </p>
                 </div>
+                <div className="faq-line"></div>
             </div>
             <div className="question">
                 <h4>Daily schedule</h4>
@@ -43,6 +48,7 @@ function FaqSection() {
                         Esse nostrum earum voluptatum ullam ex nisi!
                     </p>
                 </div>
+                <div className="faq-line"></div>
             </div>
         </div>
     );
