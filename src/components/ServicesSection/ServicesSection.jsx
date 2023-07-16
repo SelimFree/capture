@@ -1,3 +1,4 @@
+import "./ServicesSection.scss"
 //Import icons
 import clock from "../../assets/clock.svg"
 import diaphragm from "../../assets/diaphragm.svg"
@@ -7,8 +8,8 @@ import home2 from "../../assets/home2.png"
 
 function ServicesSection() {
     return (
-        <div className="ServicesSection">
-            <div className="description">
+        <div className="ServicesSection about-div">
+            <div className="description about-info">
                 <h2>High <span>quality</span> sercives</h2>
                 <div className="cards">
                     <div className="card">
@@ -41,7 +42,7 @@ function ServicesSection() {
                     </div>
                 </div>
             </div>
-            <div className="image">
+            <div className="image about-image">
                 <img src={home2}/>
             </div>
         </div>

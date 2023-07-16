@@ -1,6 +1,6 @@
 function FaqSection() {
     return (
-        <div className="FaqSection">
+        <div className="FaqSection about-div">
             <h2>
                 Any question? <span>FAQ</span>
             </h2>

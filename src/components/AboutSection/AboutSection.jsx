@@ -1,10 +1,11 @@
-import home1 from "../../assets/home1.png"
 import "./AboutSection.scss";
+//Importing images
+import home1 from "../../assets/home1.png"
 
 function AboutSection() {
     return (
-        <div className="AboutSection">
-            <div className="description">
+        <div className="AboutSection about-div">
+            <div className="description about-info">
                 <div className="hide">
                     <h2>We work to make</h2>
                 </div>
@@ -24,7 +25,7 @@ function AboutSection() {
 
                 <button>Contact us</button>
             </div>
-            <div className="image">
+            <div className="image about-image">
                 <img src={home1}/>
             </div>
         </div>
