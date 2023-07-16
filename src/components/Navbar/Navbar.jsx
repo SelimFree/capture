@@ -1,22 +1,34 @@
-import "./Navbar.scss"
-
+import "./Navbar.scss";
+import { Link } from "react-router-dom";
 function Navbar() {
-  return (
-    <nav className="Navbar">
-        <h1><a id="logo" href="#">Capture</a></h1>
-        <ul>
-            <li>
-                <a href="#">About Us</a>
-            </li>
-            <li>
-                <a href="#">Our Work</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
-  )
+    return (
+        <nav className="Navbar">
+            <Link to={"/"}>
+                <h1>
+                    <p id="logo">
+                        Capture
+                    </p>
+                </h1>
+            </Link>
+            <ul>
+                <Link to={"/"}> 
+                    <li>
+                        <p>About Us</p>
+                    </li>
+                </Link>
+                <Link to={"/work"}> 
+                    <li>
+                        <p>Our Work</p>
+                    </li>
+                </Link>
+                <Link to={"/contact"}> 
+                    <li>
+                        <p>Contact Us</p>
+                    </li>
+                </Link>
+            </ul>
+        </nav>
+    );
 }
 
-export default Navbar
+export default Navbar;
