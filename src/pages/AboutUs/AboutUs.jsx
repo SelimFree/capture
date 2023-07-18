@@ -3,9 +3,11 @@ import "./AboutUs.scss"
 import AboutSection from "../../components/AboutSection/AboutSection";
 import ServicesSection from "../../components/ServicesSection/ServicesSection";
 import FaqSection from "../../components/FaqSection/FaqSection";
+//ANimations
+import { motion } from "framer-motion";
 
 function AboutUs() {
-    return (
+    return (        
         <div className="AboutUs">
             <AboutSection />
             <ServicesSection />

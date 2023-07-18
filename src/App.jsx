@@ -5,19 +5,36 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import OurWork from "./pages/OurWork/OurWork";
 import SingleWork from "./pages/SingleWork/SingleWork";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import { useState } from "react";
 // Router
 import {
     createBrowserRouter,
     RouterProvider,
-    Outlet,
     useRouteError,
+    useOutlet,
+    useLocation,
 } from "react-router-dom";
+//Animation
+import { motion, AnimatePresence } from "framer-motion";
+import { pageAnimation } from "./animation";
+
+const AnimatedOutlet = () => {
+    const o = useOutlet();
+    const [outlet] = useState(o);
+
+    return <>{outlet}</>;
+};
 
 const Layout = () => {
+    const location = useLocation();
     return (
         <div className="App">
             <Navbar />
-            <Outlet />
+            <AnimatePresence mode="wait">
+                <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit" key={location.pathname}>
+                    <AnimatedOutlet />
+                </motion.div>
+            </AnimatePresence>
         </div>
     );
 };
