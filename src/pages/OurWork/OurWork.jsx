@@ -1,35 +1,16 @@
 import "./OurWork.scss";
-//Importing Images
-import athlete from "../../assets/athlete-small.png";
-import theracer from "../../assets/theracer-small.png";
-import goodtimes from "../../assets/goodtimes-small.png";
-//Router Link
-import { Link } from "react-router-dom";
+//Importing Data
+import {MovieState} from "../../data";
+import { useState } from "react";
+import SmallMovie from "../../components/SmallMovie/SmallMovie";
 
 function OurWork() {
+    const [data] = useState(MovieState());
     return (
         <div className="OurWork">
-            <div className="work">
-                <h2>The Athlete</h2>
-                <div className="line"></div>
-                <Link>
-                    <img src={athlete} />
-                </Link>
-            </div>
-            <div className="work">
-                <h2>The Racer</h2>
-                <div className="line"></div>
-                <Link>
-                    <img src={theracer} />
-                </Link>
-            </div>
-            <div className="work">
-                <h2>Good Times</h2>
-                <div className="line"></div>
-                <Link>
-                    <img src={goodtimes} />
-                </Link>
-            </div>
+            {data.map((work, i) => (
+                <SmallMovie movie={work} key={i}/>
+            ))}
         </div>
     );
 }

@@ -3,6 +3,7 @@ import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import OurWork from "./pages/OurWork/OurWork";
+import SingleWork from "./pages/SingleWork/SingleWork";
 import ContactUs from "./pages/ContactUs/ContactUs";
 // Router
 import {
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/work/:id",
-                element: <OurWork />,
+                element: <SingleWork />,
             },
             {
                 path: "/contact",
