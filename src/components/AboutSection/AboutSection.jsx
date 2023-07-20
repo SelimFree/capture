@@ -1,6 +1,7 @@
 import "./AboutSection.scss";
 //Importing images
 import home1 from "../../assets/home1.png"
+import Wave from "../Wave/Wave";
 //Framer motion
 import { motion } from "framer-motion";
 import { titleAnimation, fade, photoAnimation } from "../../animation"
@@ -33,6 +34,7 @@ function AboutSection() {
             <div className="image about-image">
                 <motion.img variants={photoAnimation} src={home1}/>
             </div>
+            <Wave />
         </div>
     );
 }
