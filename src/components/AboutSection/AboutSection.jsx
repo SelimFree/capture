@@ -3,7 +3,7 @@ import "./AboutSection.scss";
 import home1 from "../../assets/home1.png"
 //Framer motion
 import { motion } from "framer-motion";
-
+import { titleAnimation, fade, photoAnimation } from "../../animation"
 function AboutSection() {
 
     return (
@@ -11,27 +11,27 @@ function AboutSection() {
             <div className="description about-info">
                 <motion.div className="title">
                     <div className="hide">
-                        <motion.h2>We work to make</motion.h2>
+                        <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
                     </div>
                     <div className="hide">
-                        <motion.h2>
+                        <motion.h2 variants={titleAnimation}>
                             your <span>dreams</span>
                         </motion.h2>
                     </div>
                     <div className="hide">
-                        <motion.h2>come true.</motion.h2>
+                        <motion.h2 variants={titleAnimation}>come true.</motion.h2>
                     </div>
                 </motion.div>
-                <p>
+                <motion.p variants={fade}>
                     Contact us for any photography or videography ideas that you
                     have. We have professionals with amazing skills to help you
                     to achieve it.
-                </p>
+                </motion.p>
 
-                <button>Contact us</button>
+                <motion.button variants={fade}>Contact us</motion.button>
             </div>
             <div className="image about-image">
-                <img src={home1}/>
+                <motion.img variants={photoAnimation} src={home1}/>
             </div>
         </div>
     );
