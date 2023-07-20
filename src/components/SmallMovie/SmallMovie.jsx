@@ -1,14 +1,19 @@
 import "./SmallMovie.scss"; 
 //Importing Routing
 import { Link } from "react-router-dom";
+//Animation
+import { motion } from "framer-motion";
+import { fade, photoAnimation, lineAnimation } from "../../animation"
 
 function SmallMovie({movie}) {
     return (
         <div className="SmallMovie">
-            <h2>{movie.title}</h2>
-            <div className="line"></div>
+            <motion.h2 variants={fade}>{movie.title}</motion.h2>
+            <motion.div variants={lineAnimation} className="line"></motion.div>
             <Link to={movie.url}>
-                <img src={movie.mainImg} />
+                <div className="hide">
+                    <motion.img variants={photoAnimation} src={movie.mainImg} />
+                </div>
             </Link>
         </div>
     );
