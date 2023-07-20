@@ -2,11 +2,14 @@ import Toggle from "../Toggle/Toggle";
 import "./FaqSection.scss";
 
 //Animation
-import { LayoutGroup } from "framer-motion";
+import { motion, LayoutGroup } from "framer-motion";
+import {fade} from "../../animation"
+import { useScroll } from "../../hooks/useScroll";
 
 function FaqSection() {
+    const [element, controls] = useScroll()
     return (
-        <div className="FaqSection about-div">
+        <motion.div className="FaqSection about-div" variants={fade} ref={element} animate={controls} initial="hidden">
             <h2>
                 Any question? <span>FAQ</span>
             </h2>
@@ -57,7 +60,7 @@ function FaqSection() {
                     </div>
                 </Toggle>
             </LayoutGroup>
-        </div>
+        </motion.div>
     );
 }
 export default FaqSection;

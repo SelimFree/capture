@@ -5,10 +5,15 @@ import diaphragm from "../../assets/diaphragm.svg"
 import money from "../../assets/money.svg"
 import teamwork from "../../assets/teamwork.svg"
 import home2 from "../../assets/home2.png"
+import { useScroll } from "../../hooks/useScroll"
+//Animation
+import {motion} from "framer-motion"
+import {fade} from "../../animation"
 
 function ServicesSection() {
+    const [element, controls] = useScroll()
     return (
-        <div className="ServicesSection about-div">
+        <motion.div className="ServicesSection about-div" variants={fade} ref={element} animate={controls} initial="hidden">
             <div className="description about-info">
                 <h2>High <span>quality</span> sercives</h2>
                 <div className="cards">
@@ -45,7 +50,7 @@ function ServicesSection() {
             <div className="image about-image">
                 <img src={home2}/>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default ServicesSection;
