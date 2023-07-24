@@ -46,6 +46,19 @@
     li {
         padding-left: 7rem;
         position: relative;
+
+        .line {
+            height: 0.3rem;
+            background: #23d997;
+            width: 0%;
+            position: absolute;
+            bottom: -50%;
+            left: 55%;
+
+            @media (max-width: 900px) {
+                left: 0%;
+            }
+        }
     }
 
     p {
