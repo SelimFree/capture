@@ -1,4 +1,5 @@
 import "./ContactUs.scss"
+import ScrollTop from "../../components/ScrollTop/ScrollTop"
 
 //Animation
 import { motion } from "framer-motion"
@@ -31,6 +32,7 @@ function ContactUs() {
             <h2>Follow us on Instagramm</h2>
           </motion.div>
         </div>
+        <ScrollTop />
     </div>
   )
 }

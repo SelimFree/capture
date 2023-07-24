@@ -3,6 +3,7 @@ import "./OurWork.scss";
 import {MovieState} from "../../data";
 import { useState } from "react";
 import SmallMovie from "../../components/SmallMovie/SmallMovie";
+import ScrollTop from "../../components/ScrollTop/ScrollTop";
 //ANimations
 import { motion } from "framer-motion";
 import { slider, sliderContainer } from "../../animation"
@@ -20,6 +21,7 @@ function OurWork() {
             {data.map((work, i) => (
                 <SmallMovie movie={work} key={i}/>
             ))}
+            <ScrollTop />
         </div>
     );
 }

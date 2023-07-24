@@ -3,6 +3,7 @@ import "./SingleWork.scss";
 import { useParams } from "react-router-dom";
 import { MovieState } from "../../data";
 import { useEffect, useState } from "react";
+import ScrollTop from "../../components/ScrollTop/ScrollTop";
 
 function SingleWork() {
     const workId = useParams().id;
@@ -31,6 +32,7 @@ function SingleWork() {
                     <div className="imageDisplay">
                       <img src={movie.secondaryImg} />
                     </div>
+                    <ScrollTop />
                 </div>
             )}
         </>
