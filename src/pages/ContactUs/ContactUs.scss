@@ -3,6 +3,10 @@
     color: #353535;
     min-height: 90vh;
 
+    @media (max-width: 900px) {
+        padding: 2rem;
+        font-size: 0.8rem;
+    }
     .hide {
         overflow: hidden;
     }

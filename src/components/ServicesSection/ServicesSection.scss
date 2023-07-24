@@ -7,11 +7,17 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-end;
+            @media (max-width: 900px) {
+                justify-content: center;
+            }
             .card {
                 flex-basis: 17rem;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
+                @media (max-width: 900px) {
+                    align-items: center;
+                }
                 .icon {
                     display: flex;
                     align-items: center;
@@ -31,6 +37,9 @@
         h2 {
             padding-bottom: 5rem;
             text-align: end;
+            @media (max-width: 900px) {
+                text-align: center;
+            }
         }
 
         p {
@@ -41,5 +50,8 @@
 
     .image {
         padding-right: 5rem;
+        @media (max-width: 900px) {
+            padding: 0;
+        }
     }
 }
